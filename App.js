@@ -9,7 +9,7 @@ import { Authenticated } from "./components/Auth/Authenticated";
 import { Login } from "./components/Auth/Login";
 import { PublicRoute } from "./components/Auth/PublicRoute";
 import { Register } from "./components/Auth/Register";
-
+import { NavBar } from "./components/Navbar/NavBar";
 
 function App() {
   return (
