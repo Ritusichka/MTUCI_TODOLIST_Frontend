@@ -20,7 +20,7 @@ export const NavBar = () => {
         justify="space-between"
         wrap="wrap"
         padding="1rem"
-        bg={useColorModeValue("green.300", "green.600")}
+        bg={useColorModeValue("blue.300", "blue.600")}
         color="white"
       >
         <Text as="h2" fontSize={24} fontWeight="bold">
@@ -28,7 +28,7 @@ export const NavBar = () => {
         </Text>
         <Stack direction="row" align="center" spacing={4}>
           <ThemeToggler size="lg" />
-          <Button onClick={logout} colorScheme="green">
+          <Button onClick={logout} colorScheme="blue">
             Logout
           </Button>
         </Stack>

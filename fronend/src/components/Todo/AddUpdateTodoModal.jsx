@@ -69,8 +69,8 @@ export const AddUpdateTodoModal = ({
 
   return (
     <Box {...rest}>
-      <Button w="100%" colorScheme="green" onClick={onOpen}>
-        {editable ? "UPDATE FODO" : "ADD FODO"}
+      <Button w="100%" colorScheme="blue" onClick={onOpen}>
+        {editable ? "UPDATE TODO" : "ADD TODO"}
       </Button>
       <Modal
         closeOnOverlayClick={false}
@@ -82,13 +82,13 @@ export const AddUpdateTodoModal = ({
         <ModalOverlay />
         <form onSubmit={handleSubmit(onSubmit)}>
           <ModalContent>
-            <ModalHeader>{editable ? "Update Fodo" : "ADD FODO"}</ModalHeader>
+            <ModalHeader>{editable ? "Update Todo" : "ADD TODO"}</ModalHeader>
             <ModalCloseButton />
             <ModalBody>
               <FormControl isInvalid={errors.title}>
                 <Input
                   placeholder="Todo Title...."
-                  background={useColorModeValue("gray.300", "gray.600")}
+                  background={useColorModeValue("blue.300", "blue.600")}
                   type="text"
                   variant="filled"
                   size="lg"
@@ -113,7 +113,7 @@ export const AddUpdateTodoModal = ({
                 <Textarea
                   rows={5}
                   placeholder="Add description...."
-                  background={useColorModeValue("gray.300", "gray.600")}
+                  background={useColorModeValue("blue.300", "blue.600")}
                   type="test"
                   variant="filled"
                   size="lg"
@@ -148,7 +148,7 @@ export const AddUpdateTodoModal = ({
                       name="status"
                       isDisabled={false}
                       isLoading={false}
-                      colorScheme="green"
+                      colorScheme="blue"
                       variant="ghost"
                     />
                   </FormControl>
@@ -161,7 +161,7 @@ export const AddUpdateTodoModal = ({
                   Close
                 </Button>
                 <Button
-                  colorScheme="green"
+                  colorScheme="blue"
                   type="submit"
                   isLoading={isSubmitting}
                   loadingText={editable ? "Updating" : "Creating"}

@@ -19,7 +19,7 @@ export const TodoDetail = () => {
   const { todoId } = useParams();
   const navigate = useNavigate();
   const toast = useToast();
-  const background = useColorModeValue("gray.300", "gray.600");
+  const background = useColorModeValue("blue.300", "blue.600");
 
   useEffect(() => {
     if (isMounted.current) return;

@@ -5,7 +5,7 @@ export const TodoCard = ({ todo }) => {
   const navigate = useNavigate();
   return (
     <Flex
-      bg={useColorModeValue("gray.300", "gray.600")}
+      bg={useColorModeValue("blue.300", "blue.600")}
       minHeight="3rem"
       my={3}
       p={3}
