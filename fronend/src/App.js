@@ -12,6 +12,7 @@ import { Register } from "./components/Auth/Register";
 import { NavBar } from "./components/Navbar/NavBar";
 import { TodoDetail } from "./components/Todo/TodoDetail";
 import { TodoList } from "./components/Todo/TodoList";
+import { AuthConsumer, AuthProvider } from "./context/JWTAuthContext";
 
 function App() {
   return (
