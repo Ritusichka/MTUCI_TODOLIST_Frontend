@@ -2,7 +2,7 @@ cd fronted
 
 yarn
 
-npm install
+npm install(usuall to fix troube)
 
 RUNNING
 
